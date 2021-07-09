@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorldTour</title>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="loginCSS.css">
+    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -21,16 +20,27 @@
             <li><a href="href">Service</a></li>
             <li><a href="href">About</a></li>
             <li><a href="href">Feedback</a></li>
-            <li><button class='loginbtn' onclick="myfunction()">Login</button></li>
         </ul>
     </nav>
+    <div class="login-box">
+        <h1>Login</h1>
+        <input type="text" class="input-box" placeholder="UserName">
+        <input type="password" class="input-box" placeholder="Password">
+        <input class="btn" type="button" value="Log In" onclick="myfunction2()">
+        <h5>Forgot password?</h5>
+        <p>Doesn't have an account? <span class="signup" onclick="myfunction()">Sign Up</span></p>
+    </div>
 
     <script>
         function myfunction()
         {
-            window.location = "login.html";
+            window.location = "signup.html";
+        }
+
+        function myfunction2()
+        {
+            window.location = "home.html";
         }
     </script>
-
 </body>
 </html>
